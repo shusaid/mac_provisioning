@@ -12,3 +12,4 @@
 9. `brew install python ansible`
 10. `mkdir .mac_provisioning`
 11. `cd .mac_provisioning`
+12. `HOMEBREW_CASK_OPTS="--appdir=/Applications" ansible-playbook -i hosts -vv localhost.yml` でインストール
