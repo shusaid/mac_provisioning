@@ -1,8 +1,22 @@
-- localhost
+- hosts: localhost
   connection: local
   gather_facts: no
   sudo: no
-  tasks:
-    # update Homebrew
-    - name: update homebrew
-      homebrew: update_homebrew=yes
+  vars:
+    homebrew_packages:
+      - { name: ansible }
+      - { name: brew-cask }
+      - { name: coreutils }
+      - { name: git }
+      - { name: mysql }
+      - { name: nodebrew }
+      - { name: python }
+      - { name: rbenv }
+      - { name: ruby-build }
+      - { name: reattach-to-user-namespace }
+      - { name: readline }
+      - { name: tmux }
+      - { name: tig }
+      - { name: wget }
+      - { name: zsh }
+      - { name: zsh-completions }
